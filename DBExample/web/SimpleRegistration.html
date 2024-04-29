@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simple Registration without Confirmation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method ="post" action ="/DBExample/SimpleRegistration" >
+            <p>Last Name<font color ="#FF0000">*</font>
+                <input type ="text" name="lastName">&nbsp;
+               First Name<font color ="#FF0000">*</font>
+                <input type ="text" name="firstName">&nbsp;
+                MI <input type ="text" name="mi" size ="3">
+            </p>
+            <p>Telephone
+                <input type ="text" name="telephone">&nbsp;
+               Email<font color ="#FF0000"></font>
+                <input type ="text" name="email">&nbsp;        
+            </p>
+            <p>Street <input type="text" name ="street" size="50"></p>
+            <p>City
+                <input type ="text" name="city">&nbsp;
+               State
+               <select size="1" name ="state">
+                   <option value ="Selangor">Selangor</option>
+                   <option value ="Perak">Perak</option>
+                   <option value ="Kedah">Kedah</option>
+                   <option value ="Melaka">Melaka</option>
+                   <option value ="Johor">Johor</option>
+                   <option value ="Negeri Sembilan">Negeri Sembilan</option>
+               </select>&nbsp;
+               <p>Postcode <input type="text" name ="postcode" size="5"></p>
+               <input type="submit" value="submit">
+               <input type="reset" value="reset">
+            </p>
+        </form>
+        <p><font color="#FF0000">* required fields</font></p>
+    </body>
+</html>
